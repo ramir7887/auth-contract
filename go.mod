@@ -1,4 +1,4 @@
-module gitlab.com/g6834/team28/auth-contract
+module github.com/ramir7887/auth-contract
 
 go 1.17
 
