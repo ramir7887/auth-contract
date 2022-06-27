@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+// имя пакета внутри proto-файла, чтобы не путаться в иерархии файлов
+package auth;
+
+// имя пакета go для сгенерированных заглушек
+option go_package = "/auth";
+
+
+// описание сервиса и его методов
+service AuthService {
+  rpc Validate(Token) returns (Token);
+}
+
+message Token {
+  string accessToken = 1;
+  string refreshToken = 2;
+}
+
